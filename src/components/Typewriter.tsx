@@ -18,7 +18,7 @@ const Typewriter = ({ text, speed = 50 }: TypewriterProps) => {
   }, [text, speed]);
 
   return (
-    <h2 className="text-lg font-display laptop:text-lg font-bold leading-6 text-primary-600 mt-4 laptop:mt-7">
+    <h2 className="text-lg font-display laptop:text-lg font-bold leading-6 text-primary-600 mt-4 ml-1 laptop:mt-7">
       {displayedText}
     </h2>
   )
