@@ -1,8 +1,16 @@
 import React from 'react'
+import Container from '../components/Container'
+import SectionTitle from '../components/SectionTitle'
 
 const Sobre = () => {
   return (
-    <section>Sobre</section>
+    <section>
+      <Container>
+        <div className='layout-grid'>
+          <SectionTitle title={'Sobre mim'}/>
+        </div>
+      </Container>
+    </section>
   )
 }
 
