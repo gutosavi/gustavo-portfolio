@@ -33,12 +33,20 @@
   --breakpoint-tablet: 40rem;
   --breakpoint-laptop: 64rem;
   --breakpoint-desktop: 80rem;
+
+  --animate-show-left: show-left 0.3s ease-out;
+  @keyframes show-left {
+    from {
+      opacity: 0;
+      transform: translate3d(-20px, 0 , 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
 }
 
 .layout-grid {
-  @apply grid grid-cols-1 gap-10 laptop:grid-cols-12;
+  @apply grid grid-cols-1 w-full box-border gap-10 laptop:grid-cols-12;
 }
-
-/* .layout-grid {
-  @apply grid grid-cols-12 gap-10 max-tablet:flex max-tablet:justify-center;
-} */
