@@ -48,5 +48,5 @@
 }
 
 .layout-grid {
-  @apply grid grid-cols-1 w-full box-border gap-10 laptop:grid-cols-12;
+  @apply grid grid-cols-1 w-full mt-32 box-border gap-10 laptop:grid-cols-12;
 }
