@@ -1,5 +1,4 @@
 import React from 'react'
-// import '../styles/animations.css';
 import Container from './Container';
 import LogoSvg from '../assets/image/marca.svg';
 
@@ -7,16 +6,16 @@ const NavBar = () => {
   return (
     <header className='mt-10 mb-20'>
       <Container>
-        <div className='layout-grid'>
-          <div className='w-52 h-10 left-0 top-0'>
+        <div className='layout-grid items-center'>
+          <div className='w-36 tablet:w-44'>
             <img src={LogoSvg} />
           </div>
-          <nav className="col-start-9 w-79 h-11">
-            <ul className='flex flex-row ml-5 gap-10'>
-              <li className="w-16 h-10 left-0 top-0 justify-start text-primary-900 text-base font-normal font-display leading-10"><a className='animation-menu' href="#sobre">Sobre</a></li>
-              <li className="w-20 h-10 left-[89px] top-0 justify-start text-primary-900 text-base font-normal font-display leading-10"><a className='animation-menu' href="#projetos">Projetos</a></li>
-              <li className="w-16 h-10 left-[189px] top-0 justify-start text-primary-900 text-base font-normal font-display leading-10"><a className='animation-menu' href="#skills">Skills</a></li>
-              <li className="w-16 h-10 left-[277px] top-[0.07px] justify-start text-primary-900 text-base font-normal font-display leading-10"><a className='animation-menu' href="#contato">Contato</a></li>
+          <nav className="col-start-12 justify-self-end">
+            <ul className='hidden tablet:flex flex-row ml-3 gap-10'>
+              <li className="text-primary-900 text-base font-normal font-display leading-10"><a className='animation-menu' href="#sobre">Sobre</a></li>
+              <li className="text-primary-900 text-base font-normal font-display leading-10"><a className='animation-menu' href="#projetos">Projetos</a></li>
+              <li className="text-primary-900 text-base font-normal font-display leading-10"><a className='animation-menu' href="#skills">Skills</a></li>
+              <li className="text-primary-900 text-base font-normal font-display leading-10"><a className='animation-menu' href="#contato">Contato</a></li>
             </ul>
           </nav>
         </div>
