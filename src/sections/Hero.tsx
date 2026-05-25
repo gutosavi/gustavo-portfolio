@@ -16,7 +16,7 @@ const Hero = () => {
           laptop:row-start-1 laptop:col-end-13 laptop:col-span-5 flex flex-col gap-6'>
             <div className='laptop:mt-20'>
               <Decoration />
-              <h1 className="relative text-4xl w-96 mx-auto laptop:mx-0 laptop:w-full laptop:text-[55px] font-bold font-display leading-tight laptop:leading-16.25 text-primary-900 laptop:z-50">Desenvolvedor Front End React & TypeScript
+              <h1 className="relative text-5xl w-96 mx-auto laptop:mx-0 laptop:w-full laptop:text-6xl font-bold font-display leading-tight laptop:leading-16.25 text-primary-900 laptop:z-50">Desenvolvedor Front End React & TypeScript
               </h1>
               <Typewriter text={"Coonstruindo aplicações web modernas, responsivas e intuitivas."} />
             </div>
