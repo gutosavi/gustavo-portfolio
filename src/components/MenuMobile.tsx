@@ -25,7 +25,7 @@ const MenuMobile = ({ isOpen }: MenuMobileProp) => {
             shadow-xl
 
             ${isOpen
-              ? "max-h-96 opacity-100 mt-8 p-6"
+              ? "max-h-96 opacity-100 p-6"
               : "max-h-0 opacity-0 p-0"}
           `}>
           <ul className="flex flex-col items-center gap-6 text-2xl">

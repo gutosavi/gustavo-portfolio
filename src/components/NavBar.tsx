@@ -1,46 +1,81 @@
-import React from 'react'
+import React from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import Container from './Container';
-import LogoSvg from '../assets/image/marca.svg';
 import MenuMobile from './MenuMobile';
+import LogoSvg from '../assets/image/marca.svg';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <header className='mt-10 mb-20 relative'>
+    <header className="fixed top-0 left-0 z-50 h-20 w-full bg-white">
       <Container>
-        <div className='laptop:flex flex-row items-center'>
-          <div className='flex flex-row justify-between items-center w-full'>
-            <a className='cursor-pointer' href="/"><img className='w-36 laptop:w-44' src={LogoSvg} /></a>
-            <button className='flex flex-row items-center gap-2 font-display font-bold text-primary-900 cursor-pointer laptop:hidden' onClick={() => setIsOpen(!isOpen)}>
-              MENU
-              {isOpen ? <RiCloseLine /> : <RiMenu3Line />}
-            </button>
-          </div>
-          <nav className="laptop:col-start-12 justify-self-end">
-            <ul className='hidden laptop:flex flex-row ml-3 gap-10'>
-              
-              <li className="text-primary-900 text-lg font-display leading-10"><a className='animation-menu' href="#sobre">Sobre</a>
+        <div className="flex h-20 items-center justify-between bg-white">
+          {/* logo */}
+          <a href="/" className="cursor-pointer">
+            <img
+              className="w-36 laptop:w-44"
+              src={LogoSvg}
+              alt="Logo"
+            />
+          </a>
+
+          {/* menu desktop */}
+          <nav className="hidden laptop:block">
+            <ul className="flex items-center gap-10">
+              <li>
+                <a
+                  className="animation-menu text-primary-900 font-display text-lg"
+                  href="#sobre"
+                >
+                  Sobre
+                </a>
               </li>
 
-              <li className="text-primary-900 text-lg font-display leading-10"><a className='animation-menu' href="#skills">Skills</a>
+              <li>
+                <a
+                  className="animation-menu text-primary-900 font-display text-lg"
+                  href="#skills"
+                >
+                  Skills
+                </a>
               </li>
-              
-              <li className="text-primary-900 text-lg font-display leading-10"><a className='animation-menu' href="#projetos">Projetos</a>
+
+              <li>
+                <a
+                  className="animation-menu text-primary-900 font-display text-lg"
+                  href="#projetos"
+                >
+                  Projetos
+                </a>
               </li>
-              
-              
-              <li className="text-primary-900 text-lg  font-display leading-10"><a className='animation-menu' href="#contato">Contato</a>
+
+              <li>
+                <a
+                  className="animation-menu text-primary-900 font-display text-lg"
+                  href="#contato"
+                >
+                  Contato
+                </a>
               </li>
             </ul>
           </nav>
+
+          {/* botão mobile */}
+          <button
+            className="flex items-center gap-2 font-display cursor-pointer font-bold text-primary-900 laptop:hidden"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            MENU
+            {isOpen ? <RiCloseLine size={22} /> : <RiMenu3Line size={22} />}
+          </button>
         </div>
+
         {/* menu mobile */}
         <MenuMobile isOpen={isOpen} />
       </Container>
     </header>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;
