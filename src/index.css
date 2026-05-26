@@ -68,5 +68,9 @@
 }
 
 .layout-grid {
-  @apply grid col-span-full w-full mt-32 box-border gap-10 laptop:grid-cols-12;
+  @apply grid col-span-full mx-auto max-w-140 box-border gap-10 laptop:grid-cols-12 laptop:max-w-full;
+}
+
+.section {
+  @apply mt-20 laptop:mt-30;
 }
