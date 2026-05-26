@@ -10,7 +10,8 @@ const Sobre = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className='section'>
+      className='section'
+      id='sobre'>
       <Container>
         <div className='layout-grid animate-show-left mb-10'>
           
