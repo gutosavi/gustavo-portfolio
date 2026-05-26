@@ -23,12 +23,13 @@ const NavBar = () => {
               
               <li className="text-primary-900 text-lg font-display leading-10"><a className='animation-menu' href="#sobre">Sobre</a>
               </li>
+
+              <li className="text-primary-900 text-lg font-display leading-10"><a className='animation-menu' href="#skills">Skills</a>
+              </li>
               
               <li className="text-primary-900 text-lg font-display leading-10"><a className='animation-menu' href="#projetos">Projetos</a>
               </li>
               
-              <li className="text-primary-900 text-lg font-display leading-10"><a className='animation-menu' href="#skills">Skills</a>
-              </li>
               
               <li className="text-primary-900 text-lg  font-display leading-10"><a className='animation-menu' href="#contato">Contato</a>
               </li>

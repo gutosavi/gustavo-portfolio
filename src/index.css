@@ -74,3 +74,13 @@
 .section {
   @apply mt-20 laptop:mt-30;
 }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  section {
+    scroll-margin-top: 6rem;
+  }
+}
