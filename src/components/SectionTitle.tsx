@@ -2,12 +2,12 @@ import React from 'react'
 
 interface SectionTitleProp {
   title: string;
-  width: number;
+  style?: React.CSSProperties;
 }
 
-const SectionTitle = ({ title, width }: SectionTitleProp) => {
+const SectionTitle = ({ title, style }: SectionTitleProp) => {
   return (
-    <div className={`text-primary-600 text-3xl font-display font-bold leading-[0.85] w-${width} wrap-break-word laptop:text-9xl`}>
+    <div className={`text-primary-600 text-3xl font-display font-bold leading-[0.85] wrap-break-word laptop:text-9xl`} style={style}>
       {title}
     </div>
   )

@@ -21,7 +21,7 @@ const Sobre = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }} 
             className="w-4 h-1 mb-2.5 laptop:w-14 laptop:h-1.5 bg-linear-to-r from-primary-300 to-primary-500" />
-            <SectionTitle title={'Sobre mim'} width={64}/>
+            <SectionTitle title={'Sobre mim'} style={{ width: "264px" }}/>
           </div>
 
 
