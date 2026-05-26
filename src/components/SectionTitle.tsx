@@ -6,7 +6,7 @@ interface SectionTitleProp {
 
 const SectionTitle = ({ title }: SectionTitleProp) => {
   return (
-    <div className="text-primary-600 text-3xl font-display font-bold leading-[0.85] w-70 wrap-break-word laptop:text-9xl">
+    <div className="text-primary-600 text-3xl font-display font-bold leading-[0.85] w-64 wrap-break-word laptop:text-9xl">
       {title}
     </div>
   )
