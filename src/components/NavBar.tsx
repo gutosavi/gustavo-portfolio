@@ -19,9 +19,6 @@ const NavBar = () => {
     }
   },[]);
 
-  // A classe do Tailwind que vai fazer a navbar sumir/aparecer é translate-y-* com transition — 
-  // você desloca ela para cima quando some e volta para 0 quando aparece.
-
   return (
     <header className="fixed top-0 left-0 z-50 h-20 w-full bg-white transition-transform duration-300 ease-in-out" style={{ transform: scrollY > 200 ? 'translateY(-100%)' : 'translateY(0)' }}>
       <Container>
