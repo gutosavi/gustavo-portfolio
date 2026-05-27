@@ -26,7 +26,7 @@ const Projetos = () => {
 
               <motion.div
                 variants={decorativeCardAnimation}
-                className="absolute top-6 left-0 h-8 w-1 origin-top bg-linear-to-b from-primary-300 to-primary-500"/>
+                className="absolute top-6 left-0 h-8 w-1 bg-linear-to-b from-primary-300 to-primary-500"/>
 
               <div
                 className="transition-transform duration-300 group-hover:scale-[1.01]">
@@ -60,7 +60,7 @@ const Projetos = () => {
 
               <motion.div
                 variants={decorativeCardAnimation}
-                className="absolute top-6 left-0 h-8 w-1 origin-top bg-linear-to-b from-primary-300 to-primary-500"/>
+                className="absolute top-6 left-0 h-8 w-1 bg-linear-to-b from-primary-300 to-primary-500"/>
 
               <div
                 className="transition-transform duration-300 group-hover:scale-[1.01]">
@@ -94,7 +94,7 @@ const Projetos = () => {
 
               <motion.div
                 variants={decorativeCardAnimation}
-                className="absolute top-6 left-0 h-8 w-1 origin-top bg-linear-to-b from-primary-300 to-primary-500"/>
+                className="absolute top-6 left-0 h-8 w-1 bg-linear-to-b from-primary-300 to-primary-500"/>
 
               <div
                 className="transition-transform duration-300 group-hover:scale-[1.01]">
@@ -127,7 +127,7 @@ const Projetos = () => {
 
               <motion.div
                 variants={decorativeCardAnimation}
-                className="absolute top-6 left-0 h-8 w-1 origin-top bg-linear-to-b from-primary-300 to-primary-500"/>
+                className="absolute top-6 left-0 h-8 w-1 bg-linear-to-b from-primary-300 to-primary-500"/>
 
               <div
                 className="transition-transform duration-300 group-hover:scale-[1.01]">
