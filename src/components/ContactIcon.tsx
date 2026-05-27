@@ -12,7 +12,7 @@ type ContactIconProp = {
 
 const ContactIcon = ({ name, contact, icon, href, delay = 0 }: ContactIconProp) => {
   return (
-    <>
+    <div className='flex flex-row gap-5'>
       <img
         src={icon}
         alt={name}
@@ -40,7 +40,7 @@ const ContactIcon = ({ name, contact, icon, href, delay = 0 }: ContactIconProp) 
           </motion.a>
         </p>
       </div>
-    </>
+    </div>
   )
 }
 
