@@ -11,7 +11,6 @@ const NavBar = () => {
   React.useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
-      console.log(window.scrollY)
     };
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -20,10 +19,10 @@ const NavBar = () => {
   },[]);
 
   return (
-    <header className="fixed top-0 left-0 z-50 h-20 w-full bg-white transition-transform duration-300 ease-in-out" style={{ transform: scrollY > 200 ? 'translateY(-100%)' : 'translateY(0)' }}>
+    <header className="fixed top-0 left-0 z-50 h-20 w-full bg-white transition-transform duration-300 ease-in-out" style={{ transform: scrollY > 500 ? 'translateY(-100%)' : 'translateY(0)' }}>
       <Container>
         <div className="flex h-20 items-center justify-between bg-white">
-          {/* logo */}
+    
           <a href="/" className="cursor-pointer">
             <img
               className="w-36 laptop:w-44"
@@ -32,7 +31,6 @@ const NavBar = () => {
             />
           </a>
 
-          {/* menu desktop */}
           <nav className="hidden laptop:block">
             <ul className="flex items-center gap-10">
               <li>
@@ -73,7 +71,6 @@ const NavBar = () => {
             </ul>
           </nav>
 
-          {/* botão mobile */}
           <button
             className="flex items-center gap-2 font-display cursor-pointer font-bold text-primary-900 laptop:hidden"
             onClick={() => setIsOpen(!isOpen)}
@@ -83,7 +80,6 @@ const NavBar = () => {
           </button>
         </div>
 
-        {/* menu mobile */}
         <MenuMobile isOpen={isOpen} />
       </Container>
     </header>
