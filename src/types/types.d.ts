@@ -22,5 +22,6 @@ type SectionsCardProps = {
 
 interface TypewriterProps {
   text: string;
+  className?: string;
   speed?: number;
 }
