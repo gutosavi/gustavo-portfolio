@@ -7,7 +7,7 @@ interface SectionTitleProp {
   style?: React.CSSProperties;
 }
 
-type AnimationCardProps = {
+type CardProps = {
   children: React.ReactNode;
   classe?: string;
   delay?: number;

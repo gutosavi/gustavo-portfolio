@@ -2,7 +2,7 @@ import React from 'react'
 import Section from '../components/Section'
 import SectionTitle from '../components/SectionTitle'
 import Container from '../components/Container'
-import AnimationCard from '../components/AnimationCard'
+import Card from '../components/Card'
 import Tags from '../components/Tags'
 import { motion } from 'framer-motion'
 import { decorativeCardAnimation } from '../animations/animations'
@@ -21,7 +21,7 @@ const Projetos = () => {
 
           <div className='flex flex-col gap-7 p-2 *:bg-neutral-100 *:shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] laptop:col-span-full overflow-hidden laptop:col-start-8'>
            
-            <AnimationCard
+            <Card
               classe="group relative rounded-2xl border border-neutral-200 p-5 transition-all duration-300 hover:border-primary-300" delay={0.2}>
 
               <motion.div
@@ -53,9 +53,9 @@ const Projetos = () => {
                 <LinkCard href="https://github.com/gutosavi/react-movies-app" text="GitHub" icon={RiGithubLine}/>
                 <LinkCard href="https://github.com/gutosavi/react-movies-app" text="Live Demo" icon={RiArrowRightUpLine}/>
               </div>
-            </AnimationCard>
+            </Card>
            
-            <AnimationCard
+            <Card
               classe="group relative rounded-2xl border border-neutral-200 p-5 transition-all duration-300 hover:border-primary-300" delay={0.2}>
 
               <motion.div
@@ -87,9 +87,9 @@ const Projetos = () => {
                 <LinkCard href="https://github.com/gutosavi/react-to-do-list" text="GitHub" icon={RiGithubLine}/>
                 <LinkCard href="https://github.com/gutosavi/react-to-do-list" text="Live Demo" icon={RiArrowRightUpLine}/>
               </div>
-            </AnimationCard>
+            </Card>
            
-            <AnimationCard
+            <Card
               classe="group relative rounded-2xl border border-neutral-200 p-5 transition-all duration-300 hover:border-primary-300" delay={0.2}>
 
               <motion.div
@@ -120,9 +120,9 @@ const Projetos = () => {
                 <LinkCard href="https://github.com/gutosavi/busca-cep" text="GitHub" icon={RiGithubLine}/>
                 <LinkCard href="https://github.com/gutosavi/busca-cep" text="Live Demo" icon={RiArrowRightUpLine}/>
               </div>
-            </AnimationCard>
+            </Card>
             
-            <AnimationCard
+            <Card
               classe="group relative rounded-2xl border border-neutral-200 p-5 transition-all duration-300 hover:border-primary-300" delay={0.2}>
 
               <motion.div
@@ -152,7 +152,7 @@ const Projetos = () => {
                 <LinkCard href="https://github.com/gutosavi/CRUD-Tarefas" text="GitHub" icon={RiGithubLine}/>
                 <LinkCard href="https://github.com/gutosavi/CRUD-Tarefas" text="Live Demo" icon={RiArrowRightUpLine}/>
               </div>
-            </AnimationCard>
+            </Card>
 
           </div>
         </div>

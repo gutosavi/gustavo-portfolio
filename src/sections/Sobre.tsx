@@ -3,6 +3,7 @@ import Container from '../components/Container'
 import Section from '../components/Section'
 import SectionTitle from '../components/SectionTitle'
 import { motion } from 'framer-motion'
+import { cardAnimation, decorativeCardAnimation } from '../animations/animations'
 
 const Sobre = () => {
   return (
@@ -15,25 +16,18 @@ const Sobre = () => {
           </div>
 
           <motion.div 
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{
-              duration: 0.6,
-              delay: 0.2,
-              ease: 'easeOut',
-            }}
-            whileHover={{
-              y: -6,
-              transition: { duration: 0.2 },
-            }} 
+            variants={cardAnimation}
+            initial="hidden"
+            whileInView="visible"
+            whileHover="hover"
             className='relative p-10 laptop:col-span-full rounded-2xl bg-neutral-100 shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] overflow-hidden laptop:col-start-8'>
 
-            <div 
+            <motion.div
+              variants={decorativeCardAnimation} 
               className='absolute top-11.25 laptop:top-11.75 left-0 w-1 h-8 bg-linear-to-b
             from-primary-300
             to-primary-500'>
-            </div>
+            </motion.div>
             
             <h2 className= 'text-5xl font-display font-bold text-primary-900 mb-10 laptop:text-6xl'>Aprendendo, evoluindo e construindo todos os dias<span className='text-primary-500'>.</span></h2>
             
