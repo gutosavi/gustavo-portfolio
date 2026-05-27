@@ -6,17 +6,40 @@ import WhatsAppIcon from '../assets/image/whatsapp-icon.svg'
 import EmailIcon from '../assets/image/mail-icon.svg'
 import LinkedinIcon from '../assets/image/linkedin-icon.svg'
 import ContactIcon from '../components/ContactIcon'
+import { motion } from 'framer-motion' 
 
 const Contato = () => {
   return (
     <Section classe={'section'} id={'contato'} >
-      <div className='bg-neutral-100 py-10'>
+      <div className='relative overflow-hidden bg-neutral-100 py-10'>
+        <motion.div
+          animate={{
+            y: [0, -20, 0],
+          }}
+          transition={{
+            duration: 8,
+            repeat: Infinity,
+            ease: 'easeInOut',
+          }}
+          className='
+            pointer-events-none
+            absolute
+            -top-20
+            -right-20
+            h-72
+            w-72
+            rounded-full
+            bg-primary-400/5
+            blur-3xl
+          '
+        />
         <Container>
           <div className='layout-grid'>
             <div className='flex flex-col laptop:col-span-1'>
               <SectionTitle title={'Contato'} style={{ width: "195px" }}/>
             </div>
             <div className='flex flex-col gap-7 p-1 laptop:col-span-full overflow-hidden laptop:col-start-8'>
+              
               <div className='flex flex-col gap-8 w-full'>
                 <h1 className='text-primary-900 text-[58px] font-bold font-display leading-15 py-2'>Vamos trabalhar juntos<span className='text-primary-500'>?</span></h1>
                 <div className='w-10 h-1 bg-linear-to-b from-primary-300 to-primary-500' />
@@ -24,8 +47,8 @@ const Contato = () => {
                 <p className='text-primary-900 text-2xl font-normal font-display leading-8 py-2'>Estou disponível para projetos freelance, consultorias e parcerias. Respondo geralmente em poucas horas. A forma mais rápida é pelo WhatsApp.
                 </p>
               </div>
-              <div className='flex flex-col gap-8 w-full my-15'>
-      
+              <div className='flex flex-col gap-8 w-full mt-15'>
+
                   <ContactIcon 
                   name='whatsapp' 
                   contact='(54)981177415' 

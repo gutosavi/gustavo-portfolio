@@ -13,7 +13,28 @@ const Skills = () => {
   return (
     <Section classe={'section'} id={'skills'}>
       
-      <div className='bg-neutral-100 py-10'>
+      <div className='relative overflow-hidden bg-neutral-100 py-10'>
+        <motion.div
+          animate={{
+            y: [0, -20, 0],
+          }}
+          transition={{
+            duration: 8,
+            repeat: Infinity,
+            ease: 'easeInOut',
+          }}
+          className='
+            pointer-events-none
+            absolute
+            -top-20
+            -right-20
+            h-72
+            w-72
+            rounded-full
+            bg-primary-400/5
+            blur-3xl
+          '
+        />
         <Container>
           <div className='layout-grid'>
             <div className='flex flex-col laptop:col-span-1'>

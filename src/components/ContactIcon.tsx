@@ -16,9 +16,10 @@ const ContactIcon = ({ name, contact, icon, href, delay = 0 }: ContactIconProp) 
       <img
         src={icon}
         alt={name}
+        className="h-12 w-12 object-contain transition-transform duration-200 group-hover:scale-110"
       />
       <div>
-        <h3 className='text-primary-900 text-xl font-bold font-display uppercase'>{name}</h3>
+        <h3 className='text-primary-900 text-xl font-bold font-display uppercase transition-colors duration-200 group-hover:text-primary-500'>{name}</h3>
         <p className='text-primary-500 text-xl font-normal font-display'>
           <motion.a 
           variants={cardAnimation}
