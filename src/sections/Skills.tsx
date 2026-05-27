@@ -4,28 +4,17 @@ import DataStorageIcon from '../assets/image/data-storage.svg'
 import ServerIcon from '../assets/image/server.svg'
 import Container from '../components/Container'
 import SectionTitle from '../components/SectionTitle'
-import { motion } from 'framer-motion'
+import Section from '../components/Section'
 import AnimationCard from '../components/AnimationCard'
 
 const Skills = () => {
   return (
-    <motion.section 
-      initial={{ opacity: 0, y: 60 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-      viewport={{ once: true }} 
-      className='section'
-      id='skills'>
+    <Section classe={'section'} id={'skills'}>
       
       <div className='bg-neutral-100 py-10'>
         <Container>
           <div className='layout-grid'>
             <div className='flex flex-col laptop:col-span-1'>
-              <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.2, duration: 0.8 }}
-              className="w-4 h-1 mb-2.5 laptop:w-14 laptop:h-1.5 bg-linear-to-r from-primary-300 to-primary-500" />
               <SectionTitle title={'Skills'} style={{ width: "240px" }}/>
             </div>
 
@@ -65,7 +54,7 @@ const Skills = () => {
         </Container>
       </div>
      
-    </motion.section  >
+    </Section>
   )
 }
 
