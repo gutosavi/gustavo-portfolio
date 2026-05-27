@@ -34,7 +34,7 @@ export const cardAnimation: Variants = {
   }),
 
   hover: {
-    y: -6,
+    y: -5,
 
     transition: {
       duration: 0.2,
