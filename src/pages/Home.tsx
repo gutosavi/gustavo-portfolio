@@ -6,10 +6,12 @@ import Skills from '../sections/Skills'
 import Projetos from '../sections/Projetos'
 import Contato from '../sections/Contato'
 import Footer from '../components/Footer'
+import ScrollProgress from '../components/ScrollProgress'
 
 const Home = () => {
   return (
     <>
+      <ScrollProgress />
       <NavBar />
       <main>
         <Hero />
