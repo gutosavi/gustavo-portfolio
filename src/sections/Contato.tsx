@@ -7,6 +7,7 @@ import EmailIcon from '../assets/image/mail-icon.svg'
 import LinkedinIcon from '../assets/image/linkedin-icon.svg'
 import ContactIcon from '../components/ContactIcon'
 import { motion } from 'framer-motion' 
+import Typewriter from '../components/Typewriter'
 
 const Contato = () => {
   return (
@@ -47,14 +48,14 @@ const Contato = () => {
                 <p className='text-primary-900 text-2xl font-normal font-display leading-8 py-2'>Estou disponível para projetos freelance, consultorias e parcerias. Respondo geralmente em poucas horas. A forma mais rápida é pelo WhatsApp.
                 </p>
               </div>
-              <div className='flex flex-col gap-8 w-full mt-15'>
+              <div className='flex flex-col gap-8 w-full mt-15 mb-10'>
 
                   <ContactIcon 
                   name='whatsapp' 
                   contact='(54)981177415' 
                   icon={WhatsAppIcon} 
                   href={'https://api.whatsapp.com/send?phone=54981177415'}
-                  delay={0.2}
+                  delay={0.1}
                   />
                             
                   <ContactIcon 
@@ -62,14 +63,14 @@ const Contato = () => {
                   contact='gutosavi@hotmail.com' 
                   icon={EmailIcon} 
                   href={'mailto:gutosavi@hotmail.com'}
-                  delay={0.4}/>
+                  delay={0.3}/>
                            
                   <ContactIcon 
                   name='linkedin' 
                   contact='www.linkedin.com/in/gustavo-savi'
                   icon={LinkedinIcon} 
                   href='https://www.linkedin.com/in/gustavo-savi'  
-                  delay={0.6} />
+                  delay={0.5}/>
                
               </div>
             </div>
