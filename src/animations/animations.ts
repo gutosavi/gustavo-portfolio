@@ -22,17 +22,20 @@ export const cardAnimation: Variants = {
     y: 40,
   },
 
-  visible: {
+  visible: (delay: number = 0) => ({
     opacity: 1,
     y: 0,
+
     transition: {
-      duration: 0.6,
-      ease: 'easeOut',
+      duration: 0.4,
+      delay,
+      ease: 'easeIn',
     },
-  },
+  }),
 
   hover: {
     y: -6,
+
     transition: {
       duration: 0.2,
     },
@@ -63,6 +66,23 @@ export const tagAnimation: Variants = {
 
     transition: {
       duration: 0.2,
+    },
+  },
+};
+
+export const decorativeCardAnimation: Variants = {
+  initial: {
+    scaleY: 1,
+    opacity: 0.9,
+  },
+
+  hover: {
+    scaleY: 1.4,
+    opacity: 1,
+
+    transition: {
+      duration: 0.3,
+      ease: 'easeOut',
     },
   },
 };
