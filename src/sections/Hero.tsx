@@ -18,7 +18,7 @@ const Hero = () => {
               <Decoration />
               <h1 className="relative text-5xl w-96 mx-auto laptop:mx-0 laptop:w-full laptop:text-6xl font-bold font-display leading-tight laptop:leading-16.25 text-primary-900 laptop:z-49">Desenvolvedor Front End React & TypeScript
               </h1>
-              <Typewriter text={"Coonstruindo aplicações web modernas, responsivas e intuitivas."} />
+              <Typewriter className={'text-lg font-display h-15 laptop:text-lg font-bold leading-6 text-primary-600 mt-4 ml-1 laptop:mt-7'} text={"Coonstruindo aplicações web modernas, responsivas e intuitivas."} />
             </div>
           </div>
 
