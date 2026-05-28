@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { cardAnimation } from '../animations/animations';
+import { RiArrowRightUpLine } from 'react-icons/ri';
 
 type ContactIconProp = {
   name: string;
@@ -35,9 +36,9 @@ const ContactIcon = ({ name, contact, icon, href, delay = 0 }: ContactIconProp) 
             group
             flex
             items-center
-            gap-4
+            gap-1
           "
-          >{contact}
+          >{contact}<RiArrowRightUpLine />
           </motion.a>
         </p>
       </div>
