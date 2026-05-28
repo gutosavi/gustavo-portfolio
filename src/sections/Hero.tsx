@@ -6,6 +6,7 @@ import Decoration from '../components/Decoration';
 import TerminalHeader from '../components/TerminalHeader';
 
 const Hero = () => {
+
   return (
     <Section classe='section' id='hero'>
       <Container>
