@@ -24,4 +24,5 @@ interface TypewriterProps {
   text: string;
   className?: string;
   speed?: number;
+  onComplete?: () => void;
 }

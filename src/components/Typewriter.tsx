@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Typewriter = ({ text, className, speed = 50 }: TypewriterProps) => {
+const Typewriter = ({ text, className, speed = 50, onComplete }: TypewriterProps) => {
   const [displayedText, setDisplayedText] = React.useState('');
-  const currentViewPort = React.useRef(null);
   const [hasStarted, setHasStarted] = React.useState(false);
-
+  const currentViewPort = React.useRef(null);
+  
   React.useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -31,8 +31,8 @@ const Typewriter = ({ text, className, speed = 50 }: TypewriterProps) => {
         i++;
       } else {
         clearInterval(typingInterval);
+        if (onComplete) onComplete();
       }
-      console.log(i);
     }, speed);
     
     return () => clearInterval(typingInterval);
