@@ -82,7 +82,7 @@
 }
 
 .layout-grid {
-  @apply grid col-span-full mx-auto max-w-140 box-border gap-10 laptop:grid-cols-12 laptop:max-w-full;
+  @apply grid col-span-full pt-10 mx-auto max-w-140 box-border gap-5 laptop:grid-cols-12 laptop:max-w-full laptop:pt-0;
 }
 
 .section {
