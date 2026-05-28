@@ -1,9 +1,5 @@
 import React from 'react'
-import Section from './Section'
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa'
-import LinkedinIconFooter from '../assets/image/linkedin-icon-footer.svg'
-import GithubIcon from '../assets/image/github-icon.svg'
-import InstagramIcon from '../assets/image/instagram-icon.svg'
 import Container from './Container'
 
 const Footer = () => {
