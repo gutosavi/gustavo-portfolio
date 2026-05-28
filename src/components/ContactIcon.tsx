@@ -21,7 +21,7 @@ const ContactIcon = ({ name, contact, icon, href, delay = 0 }: ContactIconProp) 
       />
       <div>
         <h3 className='text-primary-900 text-xl font-bold font-display uppercase transition-colors duration-200 group-hover:text-primary-500'>{name}</h3>
-        <p className='text-primary-500 text-xl font-normal font-display'>
+        <p className='text-primary-500 laptop:text-xl font-display tracking-wider'>
           <motion.a 
           variants={cardAnimation}
           custom={delay}

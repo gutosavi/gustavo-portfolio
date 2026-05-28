@@ -32,6 +32,7 @@ const Contato = () => {
             rounded-full
             bg-primary-400/5
             blur-3xl
+            will-change-transform
           '
         />
         <Container>
