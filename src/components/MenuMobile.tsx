@@ -36,14 +36,14 @@ const MenuMobile = ({ isOpen }: MenuMobileProp) => {
             </li>
 
             <li>
-              <a className="animation-menu text-primary-900 font-display" href="#projetos">
-                Projetos
+              <a className="animation-menu text-primary-900 font-display" href="#skills">
+                Skills
               </a>
             </li>
 
             <li>
-              <a className="animation-menu text-primary-900 font-display" href="#skills">
-                Skills
+              <a className="animation-menu text-primary-900 font-display" href="#projetos">
+                Projetos
               </a>
             </li>
 

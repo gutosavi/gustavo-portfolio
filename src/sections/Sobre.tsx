@@ -9,9 +9,9 @@ const Sobre = () => {
   return (
     <Section classe={'section'} id={'sobre'}>
       <Container>
-        <div className='layout-grid animate-show-left mb-10'>
+        <div className='layout-grid mb-10'>
           
-          <div className='flex flex-col laptop:col-span-1'>
+          <div className='flex flex-col laptop:col-span-1 px-1 mb-4'>
             <SectionTitle title={'Sobre mim'} style={{ width: "264px" }}/>
           </div>
 

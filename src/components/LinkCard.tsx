@@ -17,7 +17,7 @@ const LinkCard = ({ href, text, icon: Icon }: LinkProps) => {
         className="
           flex
           items-center
-          gap-2
+          gap-1
           text-sm
           font-medium
           text-primary-900

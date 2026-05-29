@@ -7,12 +7,11 @@ import EmailIcon from '../assets/image/mail-icon.svg'
 import LinkedinIcon from '../assets/image/linkedin-icon.svg'
 import ContactIcon from '../components/ContactIcon'
 import { motion } from 'framer-motion' 
-import Typewriter from '../components/Typewriter'
 
 const Contato = () => {
   return (
     <Section classe={'section'} id={'contato'} >
-      <div className='relative overflow-hidden bg-neutral-100 py-10'>
+      <div className='relative overflow-hidden bg-neutral-100 py-20'>
         <motion.div
           animate={{
             y: [0, -20, 0],
