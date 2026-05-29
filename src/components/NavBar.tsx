@@ -101,7 +101,7 @@ const NavBar = () => {
 
           <button
             ref={buttonRef}
-            className="flex items-center gap-2 px-4 font-display cursor-pointer font-bold text-primary-900 laptop:hidden"
+            className="flex items-center gap-2 px-2 font-display cursor-pointer font-bold text-primary-900 laptop:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
             MENU
