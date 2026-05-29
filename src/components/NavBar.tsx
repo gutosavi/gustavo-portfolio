@@ -7,6 +7,31 @@ import LogoSvg from '../assets/image/marca.svg';
 const NavBar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const [scrollY, setScrollY] = React.useState(0);
+  const buttonRef = React.useRef<HTMLButtonElement>(null);
+  const menuRef = React.useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    const handleClickOutside = (event: Event) => {
+      const target = event.target;
+
+      if (target instanceof HTMLElement) {
+        const clickedMenu = menuRef.current?.contains(target);
+        const clickedButton = buttonRef.current?.contains(target);
+
+        if (!clickedButton && !clickedMenu) {
+          setIsOpen(false);
+          console.log(clickedButton, clickedMenu);
+        };
+      };
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('touchstart', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
+    };
+  }, []);
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -21,7 +46,8 @@ const NavBar = () => {
   return (
     <header className="fixed top-0 left-0 z-50 h-20 w-full bg-white transition-transform duration-300 ease-in-out" style={{ transform: scrollY > 500 ? 'translateY(-100%)' : 'translateY(0)' }}>
       <Container>
-        <div className="flex h-20 items-center justify-between bg-white">
+        <div ref={menuRef}
+         className="flex h-20 items-center justify-between bg-white">
     
           <a href="/" className="cursor-pointer">
             <img
@@ -71,7 +97,7 @@ const NavBar = () => {
             </ul>
           </nav>
 
-          <button
+          <button ref={buttonRef}
             className="flex items-center gap-2 font-display cursor-pointer font-bold text-primary-900 laptop:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
