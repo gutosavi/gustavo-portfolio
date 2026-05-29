@@ -12,7 +12,7 @@ import { motion } from 'framer-motion';
 const Skills = () => {
   return (
     <Section classe={'section'} id={'skills'}>
-      <div className="relative overflow-hidden bg-neutral-100 py-20">
+      <div className="relative overflow-hidden bg-neutral-100 px-4 py-20">
         <motion.div
           animate={{
             y: [0, -20, 0],

@@ -11,7 +11,7 @@ import { motion } from 'framer-motion';
 const Contato = () => {
   return (
     <Section classe={'section'} id={'contato'}>
-      <div className="relative overflow-hidden bg-neutral-100 py-20">
+      <div className="relative overflow-hidden bg-neutral-100 py-20 p-4">
         <motion.div
           animate={{
             y: [0, -20, 0],

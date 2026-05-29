@@ -28,13 +28,13 @@ const TerminalHeader = () => {
   return (
     <motion.div
       className="
-          coll-span-full
           mx-auto
           relative
           isolate
+          w-90
           laptop:block
           laptop:col-start-2
-          w-100
+          laptop:w-100
           h-72
           my-5
           rounded-2xl
