@@ -45,7 +45,7 @@ const NavBar = () => {
 
   return (
     <header
-      className="fixed top-0 left-0 pr-5 laptop:pr-0 z-50 h-20 w-full bg-white transition-transform duration-300 ease-in-out"
+      className="fixed top-0 left-0 px-4 z-50 h-20 w-full bg-white transition-transform duration-300 ease-in-out"
       style={{
         transform: scrollY > 500 ? 'translateY(-100%)' : 'translateY(0)',
       }}
@@ -101,7 +101,7 @@ const NavBar = () => {
 
           <button
             ref={buttonRef}
-            className="flex items-center gap-2 font-display cursor-pointer font-bold text-primary-900 laptop:hidden"
+            className="flex items-center gap-2 px-4 font-display cursor-pointer font-bold text-primary-900 laptop:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
             MENU

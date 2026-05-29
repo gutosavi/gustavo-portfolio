@@ -14,15 +14,14 @@ const MenuMobile = ({ isOpen }: MenuMobileProp) => {
             -translate-x-1/2
             z-50
             w-full
-            
             laptop:hidden
             overflow-hidden
             transition-all
             duration-500
             ease-in-out
 
-            backdrop-blur-md
-            rounded-2xl
+            backdrop-blur-xl
+            rounded-b-2xl
             shadow-xl
 
             ${isOpen ? 'max-h-96 opacity-100 p-6' : 'max-h-0 opacity-0 p-0'}
