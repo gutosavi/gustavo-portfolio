@@ -1,6 +1,7 @@
+/* Animation com CSS */
+
 .animation-menu {
-  @apply
-    relative
+  @apply relative
     transition-colors
     duration-300
     ease-out

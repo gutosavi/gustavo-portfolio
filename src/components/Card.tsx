@@ -1,10 +1,10 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import { cardAnimation } from '../animations/animations'
+import React from 'react';
+import { motion } from 'framer-motion';
+import { cardAnimation } from '../animations/animations';
 
 const Card = ({ children, classe, delay = 0 }: CardProps) => {
   return (
-    <motion.div 
+    <motion.div
       variants={cardAnimation}
       custom={delay}
       initial="hidden"
@@ -12,10 +12,10 @@ const Card = ({ children, classe, delay = 0 }: CardProps) => {
       whileHover="hover"
       viewport={{ once: true, amount: 0.3 }}
       className={classe}
-      >
+    >
       {children}
     </motion.div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

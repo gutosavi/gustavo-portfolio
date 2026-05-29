@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 import type { IconType } from 'react-icons';
 
 type LinkProps = {
   href: string;
   text: string;
   icon: IconType;
-}
+};
 
 const LinkCard = ({ href, text, icon: Icon }: LinkProps) => {
   return (
@@ -25,11 +25,12 @@ const LinkCard = ({ href, text, icon: Icon }: LinkProps) => {
           duration-300
           hover:translate-x-1
         "
-        >
-        <Icon />{text}
+      >
+        <Icon />
+        {text}
       </a>
     </>
-  )
-}
+  );
+};
 
-export default LinkCard
+export default LinkCard;

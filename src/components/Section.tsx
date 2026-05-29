@@ -1,5 +1,5 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const Section = ({ children, classe, delay, id }: SectionsCardProps) => {
   return (
@@ -7,12 +7,13 @@ const Section = ({ children, classe, delay, id }: SectionsCardProps) => {
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: delay }}
-      viewport={{ once: true }} 
+      viewport={{ once: true }}
       className={classe}
-      id={id}>
-        {children}
+      id={id}
+    >
+      {children}
     </motion.section>
-  )
-}
+  );
+};
 
-export default Section
+export default Section;

@@ -1,5 +1,6 @@
-import type { Variants } from "framer-motion";
+import type { Variants } from 'framer-motion';
 
+// Variants para biblioteca motions
 export const fadeUp: Variants = {
   hidden: {
     opacity: 0,

@@ -21,8 +21,8 @@ const NavBar = () => {
         if (!clickedButton && !clickedMenu) {
           setIsOpen(false);
           console.log(clickedButton, clickedMenu);
-        };
-      };
+        }
+      }
     };
     document.addEventListener('mousedown', handleClickOutside);
     document.addEventListener('touchstart', handleClickOutside);
@@ -40,21 +40,23 @@ const NavBar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
-    }
-  },[]);
+    };
+  }, []);
 
   return (
-    <header className="fixed top-0 left-0 z-50 h-20 w-full bg-white transition-transform duration-300 ease-in-out" style={{ transform: scrollY > 500 ? 'translateY(-100%)' : 'translateY(0)' }}>
+    <header
+      className="fixed top-0 left-0 z-50 h-20 w-full bg-white transition-transform duration-300 ease-in-out"
+      style={{
+        transform: scrollY > 500 ? 'translateY(-100%)' : 'translateY(0)',
+      }}
+    >
       <Container>
-        <div ref={menuRef}
-         className="flex h-20 items-center justify-between bg-white">
-    
+        <div
+          ref={menuRef}
+          className="flex h-20 items-center justify-between bg-white"
+        >
           <a href="/" className="cursor-pointer">
-            <img
-              className="w-36 laptop:w-44"
-              src={LogoSvg}
-              alt="Logo"
-            />
+            <img className="w-36 laptop:w-44" src={LogoSvg} alt="Logo" />
           </a>
 
           <nav className="hidden laptop:block">
@@ -97,7 +99,8 @@ const NavBar = () => {
             </ul>
           </nav>
 
-          <button ref={buttonRef}
+          <button
+            ref={buttonRef}
             className="flex items-center gap-2 font-display cursor-pointer font-bold text-primary-900 laptop:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
