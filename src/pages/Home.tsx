@@ -12,15 +12,22 @@ const Home = () => {
   return (
     <>
       <ScrollProgress />
-      <NavBar />
-      <main>
-        <Hero />
-        <Sobre />
-        <Skills />
-        <Projetos />
-        <Contato />
-      </main>
-      <Footer />
+      <div
+        className="
+          min-h-screen
+          bg-white
+          dark:bg-primary-950"
+      >
+        <NavBar />
+        <main>
+          <Hero />
+          <Sobre />
+          <Skills />
+          <Projetos />
+          <Contato />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 };

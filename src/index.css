@@ -1,6 +1,8 @@
 @import 'tailwindcss';
 @import './styles/animations.css';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @font-face {
   font-family: 'Fira Sans';
   font-style: normal;
@@ -91,7 +93,7 @@
 }
 
 .section {
-  @apply mt-20 laptop:mt-30;
+  @apply pt-10 bg-white dark:bg-primary-900;
 }
 
 @layer base {

@@ -30,7 +30,7 @@ const MenuMobile = ({ isOpen }: MenuMobileProp) => {
       <ul className="flex flex-col items-center gap-6 text-2xl">
         <li>
           <a
-            className="animation-menu text-primary-900 font-display"
+            className="animation-menu text-primary-900 dark:text-primary-50 font-display"
             href="#sobre"
           >
             Sobre
@@ -39,7 +39,7 @@ const MenuMobile = ({ isOpen }: MenuMobileProp) => {
 
         <li>
           <a
-            className="animation-menu text-primary-900 font-display"
+            className="animation-menu text-primary-900 dark:text-primary-50 font-display"
             href="#skills"
           >
             Skills
@@ -48,7 +48,7 @@ const MenuMobile = ({ isOpen }: MenuMobileProp) => {
 
         <li>
           <a
-            className="animation-menu text-primary-900 font-display"
+            className="animation-menu text-primary-900 dark:text-primary-50 font-display"
             href="#projetos"
           >
             Projetos
@@ -57,7 +57,7 @@ const MenuMobile = ({ isOpen }: MenuMobileProp) => {
 
         <li>
           <a
-            className="animation-menu text-primary-900 font-display"
+            className="animation-menu text-primary-900 dark:text-primary-50 font-display"
             href="#contato"
           >
             Contato

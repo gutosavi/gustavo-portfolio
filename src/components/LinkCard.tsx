@@ -21,6 +21,7 @@ const LinkCard = ({ href, text, icon: Icon }: LinkProps) => {
           text-sm
           font-medium
           text-primary-900
+          dark:text-primary-50
           transition-all
           duration-300
           hover:translate-x-1

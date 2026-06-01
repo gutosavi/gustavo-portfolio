@@ -26,10 +26,10 @@ const ContactIcon = ({
         className="h-12 w-12 object-contain transition-transform duration-200 group-hover:scale-110"
       />
       <div>
-        <h3 className="text-primary-900 text-xl font-bold font-display uppercase transition-colors duration-200 group-hover:text-primary-500">
+        <h3 className="text-primary-900 dark:text-primary-50 text-xl font-bold font-display uppercase transition-colors duration-200 group-hover:text-primary-500 group-hover:dark:text-primary-300">
           {name}
         </h3>
-        <p className="text-primary-500 text-sm laptop:text-xl font-display tracking-wider">
+        <p className="text-primary-500 dark:text-primary-300 text-sm laptop:text-xl font-display tracking-wider">
           <motion.a
             variants={cardAnimation}
             custom={delay}

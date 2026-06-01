@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <Section classe="section" id="hero">
       <Container>
-        <div className="layout-grid items-center animate-show-left">
+        <div className="layout-grid items-center animate-show-left mt-10">
           <TerminalHeader />
 
           <div
@@ -19,12 +19,12 @@ const Hero = () => {
           >
             <div className="laptop:my-20">
               <Decoration />
-              <h1 className="relative text-5xl w-96 mx-auto laptop:mx-0 laptop:w-full laptop:text-6xl font-bold font-display leading-tight laptop:leading-16.25 text-primary-900 laptop:z-49">
+              <h1 className="relative text-5xl w-96 mx-auto laptop:mx-0 laptop:w-full laptop:text-6xl font-bold font-display leading-tight laptop:leading-16.25 text-primary-900 dark:text-primary-50 laptop:z-49">
                 Desenvolvedor Front End React & TypeScript
               </h1>
               <Typewriter
                 className={
-                  'text-lg font-display h-15 laptop:text-lg font-bold leading-6 text-primary-600 mt-4 ml-1 laptop:mt-7'
+                  'text-lg font-display h-15 laptop:text-lg font-bold leading-6 text-primary-600 dark:text-primary-300 mt-4 ml-1 laptop:mt-7'
                 }
                 text={
                   'CConstruindo aplicações web modernas, responsivas e intuitivas.'

@@ -18,7 +18,7 @@ const Projetos = () => {
             <SectionTitle title={'Projetos'} style={{ width: '200px' }} />
           </div>
 
-          <div className="flex flex-col gap-7 px-1 py-4 *:bg-neutral-100 *:shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] laptop:col-span-full overflow-hidden laptop:col-start-8">
+          <div className="flex flex-col gap-7 px-1 py-4 *:bg-neutral-100 *:dark:bg-primary-950 *:shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] laptop:col-span-full overflow-hidden laptop:col-start-8">
             <Card
               classe="group relative rounded-2xl border border-neutral-200 p-5 transition-all duration-300 hover:border-primary-300"
               delay={0.2}
@@ -29,11 +29,11 @@ const Projetos = () => {
               />
 
               <div className="transition-transform duration-300 group-hover:scale-[1.01]">
-                <h2 className="mb-1.5 font-display text-2xl font-bold leading-8 text-primary-900">
+                <h2 className="mb-1.5 font-display text-2xl font-bold leading-8 text-primary-900 dark:text-primary-50">
                   Movies App
                 </h2>
 
-                <p className="text-sm text-primary-900">
+                <p className="text-sm text-primary-900 dark:text-primary-50">
                   Aplicação web desenvolvida com React + TypeScript para busca e
                   navegação de filmes
                 </p>
@@ -71,11 +71,11 @@ const Projetos = () => {
               />
 
               <div className="transition-transform duration-300 group-hover:scale-[1.01]">
-                <h2 className="mb-1.5 font-display text-2xl font-bold leading-8 text-primary-900">
+                <h2 className="mb-1.5 font-display text-2xl font-bold leading-8 text-primary-900 dark:text-primary-50">
                   To Do List - React
                 </h2>
 
-                <p className="text-sm text-primary-900">
+                <p className="text-sm text-primary-900 dark:text-primary-50">
                   Projeto desenvolvido em React, com temperatura atual baseada
                   na localização do usuário, além de modo claro/escuro
                 </p>
@@ -113,11 +113,11 @@ const Projetos = () => {
               />
 
               <div className="transition-transform duration-300 group-hover:scale-[1.01]">
-                <h2 className="mb-1.5 font-display text-2xl font-bold leading-8 text-primary-900">
+                <h2 className="mb-1.5 font-display text-2xl font-bold leading-8 text-primary-900 dark:text-primary-50">
                   Consulta CEP
                 </h2>
 
-                <p className="text-sm text-primary-900">
+                <p className="text-sm text-primary-900 dark:text-primary-50">
                   Aplicação web para consulta de endereços a partir de um CEP
                   utilizando consumo de API pública
                 </p>
@@ -154,11 +154,11 @@ const Projetos = () => {
               />
 
               <div className="transition-transform duration-300 group-hover:scale-[1.01]">
-                <h2 className="mb-1.5 font-display text-2xl font-bold leading-8 text-primary-900">
+                <h2 className="mb-1.5 font-display text-2xl font-bold leading-8 text-primary-900 dark:text-primary-50">
                   CRUD Tarefas
                 </h2>
 
-                <p className="text-sm text-primary-900">
+                <p className="text-sm text-primary-900 dark:text-primary-50">
                   Um aplicativo de gerenciamento de tarefas (CRUD) desenvolvido
                   em JavaScript puro
                 </p>
