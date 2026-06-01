@@ -17,7 +17,7 @@ const Hero = () => {
           laptop:pl-0
           laptop:row-start-1 laptop:col-end-13 laptop:col-span-5 flex flex-col gap-6"
           >
-            <div className="laptop:my-20">
+            <div className="laptop:my-20 px-2 laptop:px-0">
               <Decoration />
               <h1 className="relative text-5xl w-96 mx-auto laptop:mx-0 laptop:w-full laptop:text-6xl font-bold font-display leading-tight laptop:leading-16.25 text-primary-900 dark:text-primary-50 laptop:z-49">
                 Desenvolvedor Front End React & TypeScript

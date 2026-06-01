@@ -35,7 +35,7 @@ const Contato = () => {
           "
         />
         <Container>
-          <div className="layout-grid">
+          <div className="layout-grid px-4 laptop:px-0">
             <div className="flex flex-col laptop:col-span-1">
               <SectionTitle title={'Contato'} style={{ width: '195px' }} />
             </div>

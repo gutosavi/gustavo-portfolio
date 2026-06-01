@@ -13,7 +13,7 @@ const Projetos = () => {
   return (
     <Section classe={'section'} id={'projetos'}>
       <Container>
-        <div className="layout-grid">
+        <div className="layout-grid px-4 laptop:px-0">
           <div className="flex flex-col laptop:col-span-1 px-1">
             <SectionTitle title={'Projetos'} style={{ width: '200px' }} />
           </div>

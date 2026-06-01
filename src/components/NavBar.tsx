@@ -110,7 +110,7 @@ const NavBar = () => {
             <ThemeToggleButton />
             <button
               ref={buttonRef}
-              className="flex items-center gap-2 px-1 font-display cursor-pointer font-bold text-primary-900 dark:text-primary-50 laptop:hidden"
+              className="flex items-center gap-2 pr-4 font-display cursor-pointer font-bold text-primary-900 dark:text-primary-50 laptop:hidden"
               onClick={() => setIsOpen(!isOpen)}
             >
               MENU
