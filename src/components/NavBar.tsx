@@ -65,6 +65,7 @@ const NavBar = () => {
                 <a
                   className="animation-menu text-primary-900 font-display text-lg"
                   href="#sobre"
+                  aria-current="page"
                 >
                   Sobre
                 </a>
@@ -101,7 +102,7 @@ const NavBar = () => {
 
           <button
             ref={buttonRef}
-            className="flex items-center gap-2 px-2 font-display cursor-pointer font-bold text-primary-900 laptop:hidden"
+            className="flex items-center gap-2 px-1 font-display cursor-pointer font-bold text-primary-900 laptop:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
             MENU
