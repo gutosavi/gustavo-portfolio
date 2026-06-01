@@ -101,12 +101,13 @@ const NavBar = () => {
                   Contato
                 </a>
               </li>
+              <li>
+                <ThemeToggleButton />
+              </li>
             </ul>
           </nav>
-
-          <div className="flex flex-row gap-2">
+          <div className="flex flex-row gap-2 laptop:hidden">
             <ThemeToggleButton />
-
             <button
               ref={buttonRef}
               className="flex items-center gap-2 px-1 font-display cursor-pointer font-bold text-primary-900 dark:text-primary-50 laptop:hidden"

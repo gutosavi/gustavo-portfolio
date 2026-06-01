@@ -1,7 +1,7 @@
 import React from 'react';
-import CodeIcon from '../assets/image/code-icon.svg';
-import DataStorageIcon from '../assets/image/data-storage.svg';
-import ServerIcon from '../assets/image/server.svg';
+import CodeIcon from '../assets/image/code-icon.svg?react';
+import DataStorageIcon from '../assets/image/data-storage.svg?react';
+import ServerIcon from '../assets/image/server.svg?react';
 import Container from '../components/Container';
 import SectionTitle from '../components/SectionTitle';
 import Section from '../components/Section';
@@ -48,10 +48,7 @@ const Skills = () => {
                 from-primary-300
                 to-primary-500"
                 ></motion.div>
-                <img
-                  src={CodeIcon}
-                  className="w-16 h-12 text-primary-900 dark:bg-primary-50 mb-3.5"
-                />
+                <CodeIcon className="w-16 h-12 text-primary-900 dark:text-primary-50 mb-3.5" />
                 <h2 className="text-primary-900 dark:text-primary-50 mb-2.5 font-display text-2xl font-bold leading-8">
                   Linguagens
                 </h2>
@@ -66,10 +63,7 @@ const Skills = () => {
                 from-primary-300
                 to-primary-500"
                 ></motion.div>
-                <img
-                  src={DataStorageIcon}
-                  className="w-16 h-12 text-primary-900 dark:bg-primary-50 mb-3.5"
-                />
+                <DataStorageIcon className="w-16 h-12 text-primary-900 dark:text-primary-50 mb-3.5" />
                 <h2 className="text-primary-900 dark:text-primary-50 mb-2.5 font-display text-2xl font-bold leading-8">
                   Databases
                 </h2>
@@ -84,10 +78,7 @@ const Skills = () => {
                 from-primary-300
                 to-primary-500"
                 ></motion.div>
-                <img
-                  src={ServerIcon}
-                  className="w-16 h-12 text-primary-900 dark:bg-primary-50 mb-3.5"
-                />
+                <ServerIcon className="w-16 h-12 text-primary-900 dark:text-primary-50 mb-3.5" />
                 <h2 className="text-primary-900 dark:text-primary-50 mb-2.5 font-display text-2xl font-bold leading-8">
                   Server & APIs
                 </h2>
