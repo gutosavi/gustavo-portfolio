@@ -7,6 +7,7 @@ import EmailIcon from '../assets/image/mail-icon.svg';
 import LinkedinIcon from '../assets/image/linkedin-icon.svg';
 import ContactIcon from '../components/ContactIcon';
 import { motion } from 'framer-motion';
+import Contact from '../components/contact/index';
 
 const Contato = () => {
   return (
@@ -66,13 +67,13 @@ const Contato = () => {
                   delay={0.1}
                 />
 
-                <ContactIcon
+                {/* <ContactIcon
                   name="email"
                   contact="gutosavi@hotmail.com"
                   icon={EmailIcon}
                   href={'mailto:gutosavi@hotmail.com'}
                   delay={0.3}
-                />
+                /> */}
 
                 <ContactIcon
                   name="linkedin"
@@ -82,6 +83,7 @@ const Contato = () => {
                   delay={0.5}
                 />
               </div>
+              <Contact />
             </div>
           </div>
         </Container>

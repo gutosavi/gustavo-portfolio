@@ -1,0 +1,43 @@
+import React from 'react';
+import { useFormContext } from 'react-hook-form';
+
+type TextAreaProps = {
+  name: string;
+  className?: string;
+  placeholder: string;
+  rows: number;
+  cols: number;
+};
+
+const TextArea = ({
+  name,
+  className,
+  placeholder,
+  rows,
+  cols,
+}: TextAreaProps) => {
+  const {
+    register,
+    watch,
+    formState: { errors },
+  } = useFormContext();
+
+  return (
+    <>
+      <textarea
+        id={name}
+        rows={rows}
+        cols={cols}
+        placeholder={placeholder}
+        className={`w-full px-4 py-3 rounded-lg border border-neutral-200 bg-neutral-50 text-primary-900 placeholder:text-neutral-400 outline-none focus:border-primary-500 transition-colors ${className ?? ''}`}
+      ></textarea>
+      {errors[name] && (
+        <span className="text-xs text-primary-400">
+          {errors[name]?.message?.toString()}
+        </span>
+      )}
+    </>
+  );
+};
+
+export default TextArea;
