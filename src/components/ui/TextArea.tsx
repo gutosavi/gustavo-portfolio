@@ -29,10 +29,17 @@ const TextArea = ({
         rows={rows}
         cols={cols}
         placeholder={placeholder}
-        className={`w-full px-4 py-3 rounded-lg border border-neutral-200 bg-neutral-50 text-primary-900 placeholder:text-neutral-400 outline-none focus:border-primary-500 transition-colors ${className ?? ''}`}
+        {...register(name, {
+          required: false,
+          maxLength: {
+            value: 500,
+            message: 'A mensagem deve conter no máximo 500 caracteres',
+          },
+        })}
+        className={`w-full mt-7 px-4 py-3 rounded-lg border border-neutral-200 bg-neutral-50 text-primary-900 placeholder:text-neutral-400 outline-none focus:border-primary-500 transition-colors ${className ?? ''}`}
       ></textarea>
       {errors[name] && (
-        <span className="text-xs text-primary-400">
+        <span className="text-xs text-primary-400 dark:text-primary-50 px-1 py-1">
           {errors[name]?.message?.toString()}
         </span>
       )}

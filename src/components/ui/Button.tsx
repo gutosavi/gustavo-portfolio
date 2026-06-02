@@ -9,7 +9,7 @@ const Button = ({ name, className }: ButtonProps) => {
   return (
     <button
       className={`cursor-pointer
-    w-full px-6 py-3
+    w-full mt-8 px-6 py-3
     font-bold font-display text-sm tracking-widest uppercase
     rounded-lg
     bg-primary-900 text-primary-50
@@ -19,6 +19,7 @@ const Button = ({ name, className }: ButtonProps) => {
     disabled:opacity-50 disabled:cursor-not-allowed ${className ?? ''}`}
       name={name}
       aria-label={name}
+      type="submit"
     >
       {name}
     </button>

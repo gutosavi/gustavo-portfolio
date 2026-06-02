@@ -23,12 +23,12 @@ const Input = ({ name, className, placeholder, validation }: InputProps) => {
   return (
     <>
       <input
-        className={`w-full px-4 py-3 rounded-lg border border-neutral-200 bg-neutral-50 text-primary-900 placeholder:text-neutral-400 outline-none focus:border-primary-500 transition-colors ${className ?? ''}`}
+        className={`w-full mt-7 px-4 py-3 rounded-lg border border-neutral-200 bg-neutral-50 text-primary-900 placeholder:text-neutral-400 outline-none focus:border-primary-500 transition-colors ${className ?? ''}`}
         placeholder={placeholder}
         {...register(name, validation)}
       />
       {errors[name] && (
-        <span className="text-xs text-primary-400">
+        <span className="text-xs  text-primary-400 dark:text-primary-50 px-1 py-1">
           {errors[name]?.message?.toString()}
         </span>
       )}
