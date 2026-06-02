@@ -1,13 +1,13 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import Section from '../components/Section';
 import Container from '../components/Container';
 import SectionTitle from '../components/SectionTitle';
-import WhatsAppIcon from '../assets/image/whatsapp-icon.svg';
-import EmailIcon from '../assets/image/mail-icon.svg';
-import LinkedinIcon from '../assets/image/linkedin-icon.svg';
+import ContactForm from '../components/contact/ContactForm';
 import ContactIcon from '../components/ContactIcon';
-import { motion } from 'framer-motion';
-import Contact from '../components/contact/index';
+import WhatsAppIcon from '../assets/image/whatsapp-icon.svg';
+import LinkedinIcon from '../assets/image/linkedin-icon.svg';
+// import EmailIcon from '../assets/image/mail-icon.svg';
 
 const Contato = () => {
   return (
@@ -83,7 +83,7 @@ const Contato = () => {
                   delay={0.5}
                 />
               </div>
-              <Contact />
+              <ContactForm />
             </div>
           </div>
         </Container>
