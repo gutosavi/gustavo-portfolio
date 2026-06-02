@@ -3,8 +3,8 @@ import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-primary-900 dark:bg-primary-800 h-28 px-4 py-10">
-      <div className="laptop:max-w-290 mx-auto">
+    <footer className="bg-primary-900 dark:bg-primary-800 h-20 px-4 py-7 mx-auto">
+      <div className="laptop:max-w-290">
         <div className="flex flex-row justify-between items-center">
           <div>
             <p className="text-neutral-100 dark:text-primary-50 text-[12px] laptop:text-xl font-bold font-display">
