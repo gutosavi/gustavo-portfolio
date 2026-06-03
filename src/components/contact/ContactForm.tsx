@@ -12,7 +12,7 @@ const ContactForm = () => {
     <FormProvider {...methods}>
       <form
         onSubmit={methods.handleSubmit(onSubmit)}
-        className="flex flex-col w-full pt-15 pb-10"
+        className="flex flex-col w-full pt-15"
       >
         <h2 className="text-primary-900 dark:text-primary-50 text-3xl font-bold font-display leading-8">
           Ou, se preferir, envie-me uma mensagem:

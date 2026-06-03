@@ -1,8 +1,8 @@
 import React from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import MenuMobile from './MenuMobile';
-import LogoSvg from '../assets/image/marca.svg';
-import ThemeToggleButton from './ThemeToggleButton';
+import LogoSvg from '../../assets/image/marca.svg';
+import ThemeToggleButton from '../theme/ThemeToggleButton';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = React.useState(false);

@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Section from '../components/Section';
-import Container from '../components/Container';
-import SectionTitle from '../components/SectionTitle';
+import Section from '../components/ui/Section';
+import Container from '../components/ui/Container';
+import SectionTitle from '../components/ui/SectionTitle';
 import ContactForm from '../components/contact/ContactForm';
-import ContactIcon from '../components/ContactIcon';
+import ContactIcon from '../components/ui/ContactIcon';
 import WhatsAppIcon from '../assets/image/whatsapp-icon.svg';
 import LinkedinIcon from '../assets/image/linkedin-icon.svg';
 // import EmailIcon from '../assets/image/mail-icon.svg';
@@ -58,7 +58,7 @@ const Contato = () => {
                   rápida é pelo WhatsApp.
                 </p>
               </div>
-              <div className="flex flex-col gap-8 w-full pt-15 pb-10">
+              <div className="flex flex-col gap-8 w-full pt-15">
                 <ContactIcon
                   name="whatsapp"
                   contact="(54)981177415"

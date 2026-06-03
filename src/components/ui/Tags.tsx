@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { tagAnimation } from '../animations/animations';
+import { tagAnimation } from '../../animations/animations';
 
 type TagTextProp = {
   text: string;

@@ -1,9 +1,9 @@
 import React from 'react';
-import Section from '../components/Section';
-import Container from '../components/Container';
-import Typewriter from '../components/Typewriter';
-import Decoration from '../components/Decoration';
-import TerminalHeader from '../components/TerminalHeader';
+import Section from '../components/ui/Section';
+import Container from '../components/ui/Container';
+import Typewriter from '../components/ui/Typewriter';
+import Decoration from '../components/ui/Decoration';
+import TerminalHeader from '../components/terminal/TerminalHeader';
 
 const Hero = () => {
   return (

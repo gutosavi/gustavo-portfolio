@@ -1,7 +1,7 @@
 import React from 'react';
-import Container from '../components/Container';
-import Section from '../components/Section';
-import SectionTitle from '../components/SectionTitle';
+import Container from '../components/ui/Container';
+import Section from '../components/ui/Section';
+import SectionTitle from '../components/ui/SectionTitle';
 import { motion } from 'framer-motion';
 import {
   cardAnimation,

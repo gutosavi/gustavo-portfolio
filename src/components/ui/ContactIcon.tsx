@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { cardAnimation } from '../animations/animations';
+import { cardAnimation } from '../../animations/animations';
 import { RiArrowRightUpLine } from 'react-icons/ri';
 
 type ContactIconProp = {

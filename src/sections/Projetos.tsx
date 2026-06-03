@@ -1,13 +1,13 @@
 import React from 'react';
-import Section from '../components/Section';
-import SectionTitle from '../components/SectionTitle';
-import Container from '../components/Container';
-import Card from '../components/Card';
-import Tags from '../components/Tags';
+import Section from '../components/ui/Section';
+import SectionTitle from '../components/ui/SectionTitle';
+import Container from '../components/ui/Container';
+import Card from '../components/ui/Card';
+import Tags from '../components/ui/Tags';
 import { motion } from 'framer-motion';
 import { decorativeCardAnimation } from '../animations/animations';
 import { RiGithubLine, RiArrowRightUpLine } from 'react-icons/ri';
-import LinkCard from '../components/LinkCard';
+import LinkCard from '../components/ui/LinkCard';
 
 const Projetos = () => {
   return (

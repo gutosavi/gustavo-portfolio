@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Typewriter from './Typewriter';
+import Typewriter from '../ui/Typewriter';
 
 const TerminalHeader = () => {
   const [typingDone, setTypingDone] = React.useState(false);

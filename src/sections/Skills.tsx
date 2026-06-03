@@ -2,10 +2,10 @@ import React from 'react';
 import CodeIcon from '../assets/image/code-icon.svg?react';
 import DataStorageIcon from '../assets/image/data-storage.svg?react';
 import ServerIcon from '../assets/image/server.svg?react';
-import Container from '../components/Container';
-import SectionTitle from '../components/SectionTitle';
-import Section from '../components/Section';
-import Card from '../components/Card';
+import Container from '../components/ui/Container';
+import SectionTitle from '../components/ui/SectionTitle';
+import Section from '../components/ui/Section';
+import Card from '../components/ui/Card';
 import { decorativeCardAnimation } from '../animations/animations';
 import { motion } from 'framer-motion';
 
