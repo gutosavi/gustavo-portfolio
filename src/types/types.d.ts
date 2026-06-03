@@ -26,3 +26,9 @@ interface TypewriterProps {
   speed?: number;
   onComplete?: () => void;
 }
+
+interface ContactFormData {
+  name: string;
+  email: string;
+  message: string;
+}
