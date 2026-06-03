@@ -20,7 +20,7 @@ const Projetos = () => {
 
           <div className="flex flex-col gap-7 px-1 py-4 *:bg-neutral-100 *:dark:bg-primary-950 *:shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] laptop:col-span-full overflow-hidden laptop:col-start-8">
             <Card
-              classe="group relative rounded-2xl border border-neutral-200 p-5 transition-all duration-300 hover:border-primary-300"
+              classe="group relative rounded-2xl border border-neutral-200 dark:border-none p-5 transition-all duration-300 hover:border-primary-300"
               delay={0.2}
             >
               <motion.div
@@ -62,7 +62,7 @@ const Projetos = () => {
             </Card>
 
             <Card
-              classe="group relative rounded-2xl border border-neutral-200 p-5 transition-all duration-300 hover:border-primary-300"
+              classe="group relative rounded-2xl border border-neutral-200 dark:border-none p-5 transition-all duration-300 hover:border-primary-300"
               delay={0.2}
             >
               <motion.div
@@ -104,7 +104,7 @@ const Projetos = () => {
             </Card>
 
             <Card
-              classe="group relative rounded-2xl border border-neutral-200 p-5 transition-all duration-300 hover:border-primary-300"
+              classe="group relative rounded-2xl border border-neutral-200 dark:border-none p-5 transition-all duration-300 hover:border-primary-300"
               delay={0.2}
             >
               <motion.div
@@ -145,7 +145,7 @@ const Projetos = () => {
             </Card>
 
             <Card
-              classe="group relative rounded-2xl border border-neutral-200 p-5 transition-all duration-300 hover:border-primary-300"
+              classe="group relative rounded-2xl border border-neutral-200 dark:border-none p-5 transition-all duration-300 hover:border-primary-300"
               delay={0.2}
             >
               <motion.div
