@@ -1,8 +1,8 @@
 import React from 'react';
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import Logo from '../ui/Logo';
 import MenuMobile from './MenuMobile';
-import LogoSvg from '../../assets/image/marca.svg';
 import ThemeToggleButton from '../theme/ThemeToggleButton';
+import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -56,11 +56,7 @@ const NavBar = () => {
           className="flex h-20 items-center justify-between bg-white dark:bg-primary-800"
         >
           <a href="/" className="cursor-pointer">
-            <img
-              className="w-36 laptop:w-44 text-primary-900 dark:text-primary-50"
-              src={LogoSvg}
-              alt="Logo"
-            />
+            <Logo className="w-36 laptop:w-44" />
           </a>
 
           <nav className="hidden laptop:block">
