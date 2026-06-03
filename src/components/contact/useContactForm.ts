@@ -4,10 +4,10 @@ import { postData } from '../../services/postData';
 
 const useContactForm = () => {
   const methods = useForm<ContactFormData>();
-  const [isLoading, setIsLoading] = React.useState(false);
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
 
   const onSubmit = async (data: ContactFormData) => {
-    setIsLoading(true);
+    setIsSubmitting(true);
     try {
       const dataForm = await postData(data);
       methods.reset();
@@ -15,13 +15,13 @@ const useContactForm = () => {
     } catch (error) {
       console.error('Erro ao enviar mensagem', error);
     } finally {
-      setIsLoading(false);
+      setIsSubmitting(false);
     }
   };
 
   return {
     methods,
-    isLoading,
+    isSubmitting,
     onSubmit,
   };
 };

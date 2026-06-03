@@ -3,12 +3,14 @@ import React from 'react';
 type ButtonProps = {
   name: string;
   className?: string;
+  disabled?: boolean;
+  isSubmitting?: boolean;
 };
 
-const Button = ({ name, className }: ButtonProps) => {
+const Button = ({ name, className, disabled, isSubmitting }: ButtonProps) => {
   return (
     <button
-      className={`cursor-pointer
+      className={`
     w-full mt-8 px-6 py-3
     font-bold font-display text-sm tracking-widest uppercase
     rounded-lg
@@ -20,8 +22,25 @@ const Button = ({ name, className }: ButtonProps) => {
       name={name}
       aria-label={name}
       type="submit"
+      disabled={disabled}
     >
-      {name}
+      {isSubmitting ? (
+        <div className="flex items-center justify-center gap-2">
+          <div
+            className="
+        size-4
+        rounded-full
+        border-2
+        border-current
+        border-t-transparent
+        animate-spin
+      "
+          />
+          Enviando...
+        </div>
+      ) : (
+        name
+      )}
     </button>
   );
 };
