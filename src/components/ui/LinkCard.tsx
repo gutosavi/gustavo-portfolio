@@ -1,11 +1,11 @@
 import React from 'react';
 import type { IconType } from 'react-icons';
 
-type LinkProps = {
+interface LinkProps {
   href: string;
   text: string;
   icon: IconType;
-};
+}
 
 const LinkCard = ({ href, text, icon: Icon }: LinkProps) => {
   return (

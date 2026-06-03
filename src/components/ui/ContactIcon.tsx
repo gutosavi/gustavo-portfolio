@@ -3,13 +3,13 @@ import { motion } from 'framer-motion';
 import { cardAnimation } from '../../animations/animations';
 import { RiArrowRightUpLine } from 'react-icons/ri';
 
-type ContactIconProp = {
+interface ContactIconProp {
   name: string;
   contact: string;
   icon: string;
   href?: string;
   delay?: number;
-};
+}
 
 const ContactIcon = ({
   name,

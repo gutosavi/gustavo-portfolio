@@ -1,24 +1,24 @@
-type ContainerProps = {
+interface ContainerProps {
   children: React.ReactNode;
-};
+}
 
 interface SectionTitleProp {
   title: string;
   style?: React.CSSProperties;
 }
 
-type CardProps = {
+interface CardProps {
   children: React.ReactNode;
   classe?: string;
   delay?: number;
-};
+}
 
-type SectionsCardProps = {
+interface SectionsCardProps {
   children: React.ReactNode;
   classe?: string;
   delay?: number;
   id: string;
-};
+}
 
 interface TypewriterProps {
   text: string;

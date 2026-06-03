@@ -1,11 +1,11 @@
 import React from 'react';
 
-type ButtonProps = {
+interface ButtonProps {
   name: string;
   className?: string;
   disabled?: boolean;
   isSubmitting?: boolean;
-};
+}
 
 const Button = ({ name, className, disabled, isSubmitting }: ButtonProps) => {
   return (

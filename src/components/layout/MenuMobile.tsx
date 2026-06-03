@@ -1,8 +1,8 @@
 import React from 'react';
 
-interface MenuMobileProp {
+type MenuMobileProp = {
   isOpen: boolean;
-}
+};
 
 const MenuMobile = ({ isOpen }: MenuMobileProp) => {
   return (

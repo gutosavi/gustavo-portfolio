@@ -1,13 +1,13 @@
 import React from 'react';
 import { useFormContext } from 'react-hook-form';
 
-type TextAreaProps = {
+interface TextAreaProps {
   name: string;
   className?: string;
   placeholder: string;
   rows: number;
   cols: number;
-};
+}
 
 const TextArea = ({
   name,
