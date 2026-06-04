@@ -1,53 +1,18 @@
 import React from 'react';
+import useNavBar from '../../hooks/useNavBar';
 import Logo from '../ui/Logo';
 import MenuMobile from './MenuMobile';
 import ThemeToggleButton from '../theme/ThemeToggleButton';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 
 const NavBar = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
-  const [scrollY, setScrollY] = React.useState(0);
-  const buttonRef = React.useRef<HTMLButtonElement>(null);
-  const menuRef = React.useRef<HTMLDivElement>(null);
-
-  React.useEffect(() => {
-    const handleClickOutside = (event: Event) => {
-      const target = event.target;
-
-      if (target instanceof HTMLElement) {
-        const clickedMenu = menuRef.current?.contains(target);
-        const clickedButton = buttonRef.current?.contains(target);
-
-        if (!clickedButton && !clickedMenu) {
-          setIsOpen(false);
-          console.log(clickedButton, clickedMenu);
-        }
-      }
-    };
-    document.addEventListener('mousedown', handleClickOutside);
-    document.addEventListener('touchstart', handleClickOutside);
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-      document.removeEventListener('touchstart', handleClickOutside);
-    };
-  }, []);
-
-  React.useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  const { menuRef, buttonRef, isOpen, isScrolled, toggleMenu } = useNavBar();
 
   return (
     <header
       className="fixed top-0 left-0 px-4 z-50 h-20 w-full bg-white dark:bg-primary-800 transition-transform duration-300 ease-in-out"
       style={{
-        transform: scrollY > 500 ? 'translateY(-100%)' : 'translateY(0)',
+        transform: isScrolled ? 'translateY(-100%)' : 'translateY(0)',
       }}
     >
       <div className="laptop:max-w-290 mx-auto">
@@ -108,7 +73,7 @@ const NavBar = () => {
               ref={buttonRef}
               className="flex items-center gap-2 px-1 font-display cursor-pointer font-bold text-primary-900 dark:text-primary-50 laptop:hidden"
               aria-label="Abrir menu"
-              onClick={() => setIsOpen(!isOpen)}
+              onClick={toggleMenu}
             >
               MENU
               {isOpen ? <RiCloseLine size={22} /> : <RiMenu3Line size={22} />}
