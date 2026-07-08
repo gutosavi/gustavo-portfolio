@@ -30,6 +30,48 @@ const Projetos = () => {
 
               <div className="transition-transform duration-300 group-hover:scale-[1.01]">
                 <h2 className="mb-1.5 font-display text-2xl font-bold leading-8 text-primary-900 dark:text-primary-50">
+                  StudyPDF AI
+                </h2>
+
+                <p className="text-sm text-primary-900 dark:text-primary-50">
+                  App fullstack integrado ao Google Gemini que permite fazer
+                  upload de PDFs para tirar dúvidas, resumir textos e gerar
+                  quizzes ou flashcards via chat.
+                </p>
+
+                <div className="mt-6 flex flex-wrap gap-2 text-sm">
+                  <Tags text="React" />
+                  <Tags text="TypeScript" />
+                  <Tags text="Node.js" />
+                  <Tags text="Tailwind CSS" />
+                </div>
+              </div>
+
+              <div className="mt-8 flex items-center gap-6 border-t border-neutral-200 pt-4">
+                <LinkCard
+                  href="https://github.com/gutosavi/studyPDF"
+                  text="GitHub"
+                  icon={RiGithubLine}
+                />
+                <LinkCard
+                  href="https://studypdf-ai.vercel.app"
+                  text="Live Demo"
+                  icon={RiArrowRightUpLine}
+                />
+              </div>
+            </Card>
+
+            <Card
+              classe="group relative rounded-2xl border border-neutral-200 dark:border-none p-5 transition-all duration-300 hover:border-primary-300"
+              delay={0.2}
+            >
+              <motion.div
+                variants={decorativeCardAnimation}
+                className="absolute top-6 left-0 h-8 w-1 bg-linear-to-b from-primary-300 to-primary-500"
+              />
+
+              <div className="transition-transform duration-300 group-hover:scale-[1.01]">
+                <h2 className="mb-1.5 font-display text-2xl font-bold leading-8 text-primary-900 dark:text-primary-50">
                   Movies App
                 </h2>
 
@@ -138,46 +180,6 @@ const Projetos = () => {
                 />
                 <LinkCard
                   href="https://github.com/gutosavi/busca-cep"
-                  text="Live Demo"
-                  icon={RiArrowRightUpLine}
-                />
-              </div>
-            </Card>
-
-            <Card
-              classe="group relative rounded-2xl border border-neutral-200 dark:border-none p-5 transition-all duration-300 hover:border-primary-300"
-              delay={0.2}
-            >
-              <motion.div
-                variants={decorativeCardAnimation}
-                className="absolute top-6 left-0 h-8 w-1 bg-linear-to-b from-primary-300 to-primary-500"
-              />
-
-              <div className="transition-transform duration-300 group-hover:scale-[1.01]">
-                <h2 className="mb-1.5 font-display text-2xl font-bold leading-8 text-primary-900 dark:text-primary-50">
-                  CRUD Tarefas
-                </h2>
-
-                <p className="text-sm text-primary-900 dark:text-primary-50">
-                  Um aplicativo de gerenciamento de tarefas (CRUD) desenvolvido
-                  em JavaScript puro
-                </p>
-
-                <div className="mt-6 flex flex-wrap gap-2 text-sm">
-                  <Tags text="JavaScript" />
-                  <Tags text="HTML" />
-                  <Tags text="CSS" />
-                </div>
-              </div>
-
-              <div className="mt-8 flex items-center gap-6 border-t border-neutral-200 pt-4">
-                <LinkCard
-                  href="https://github.com/gutosavi/CRUD-Tarefas"
-                  text="GitHub"
-                  icon={RiGithubLine}
-                />
-                <LinkCard
-                  href="https://github.com/gutosavi/CRUD-Tarefas"
                   text="Live Demo"
                   icon={RiArrowRightUpLine}
                 />
