@@ -138,7 +138,7 @@ const Projetos = () => {
                   icon={RiGithubLine}
                 />
                 <LinkCard
-                  href="https://github.com/gutosavi/react-to-do-list"
+                  href="https://github.com/gutosavi/react-to-do-list/blob/main/src/assets/img/todolist-animation.gif"
                   text="Live Demo"
                   icon={RiArrowRightUpLine}
                 />
@@ -179,7 +179,7 @@ const Projetos = () => {
                   icon={RiGithubLine}
                 />
                 <LinkCard
-                  href="https://github.com/gutosavi/busca-cep"
+                  href="https://github.com/gutosavi/busca-cep/blob/main/assets/img/buscaCEP-animation.gif"
                   text="Live Demo"
                   icon={RiArrowRightUpLine}
                 />
