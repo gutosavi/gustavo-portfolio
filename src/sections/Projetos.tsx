@@ -96,7 +96,7 @@ const Projetos = () => {
                   icon={RiGithubLine}
                 />
                 <LinkCard
-                  href="https://github.com/gutosavi/react-movies-app"
+                  href="https://github.com/gutosavi/react-movies-app/blob/main/src/assets/movies-app-animation.gif"
                   text="Live Demo"
                   icon={RiArrowRightUpLine}
                 />
